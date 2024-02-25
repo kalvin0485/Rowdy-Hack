@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoding Cipher Converter</title>
+    <link href="style.css" rel="stylesheet" type = "text/css"/>
+</head>
+
+<body>
+    <h1>Decoding Cipher Converter</h1>
+
+    <div class="container">
+        <p>Rot13 Text: Gur yrggre vf n</p>
+        <p>Caesar Text: Aol slaaly pz: 'D'</p>
+    </div>
+    
+    <p> Enter Cipher:</p>
+    <div class="dropdown">
+        <div class="select">
+            <span class="selected">Caeser</span>
+            <div class="caret"></div>
+        </div>
+        <ul class="menu">
+            <li>Rot-13</li>
+            <li class="active">Caeser</li>
+        </ul>
+    </div>
+
+    <label for="plaintext">Enter Text:</label>
+    <input type="text" id="plaintext">
+    
+    <label for="shift">Shift:</label>
+    <input type="number" id="shift" value="3">
+    
+    <button id="convertButton">Convert</button>
+    <p id="result">result</p>
+
+    <script src="script.js"></script>
+
+    <a href="./index.html">Back</a>
+    <style>
+        a{
+            color: #8d0303;
+            font-size: 18px;
+        }
+        </style>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html>
+
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width">
+
+    <title>fun :))</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+  </head>
+
+
+  <body>
+
+    <h1> Crack My Code</h1>
+
+    <h3> You have to find all the clues hidden within these links to unlock the password and get the ultimate prize.</h3>
+    
+    <h4>Think you can do it? :P</h4>
+    <style>
+      body{
+        background-color: #957dad;
+      }
+      h1 {
+
+        font-size: 81px;
+
+        color: #30004f;
+
+        font-style: italic;
+
+        font-weight: bold;
+
+        text-align: center;
+
+        text-decoration: underline;
+
+        /* //background-color: rgb(255, 255, 255); */
+
+        margin-top: 0px;
+
+        padding-top: 25px;
+
+      }
+
+      h3 {
+
+        font-size: 30px;
+
+        margin-bottom: 15px;
+
+        color: rgb(35, 25, 57);
+
+        text-align: center;
+
+        background-color: white;
+
+
+
+      }
+
+      h4{
+        font-size: 30px;
+
+        color: rgb(35, 25, 57);
+
+        text-align: center;
+
+        background-color: white;
+
+      }
+
+      label {
+
+        color: rgb(35, 25, 57);
+        font-size: xx-large;
+
+      }
+    </style>
+   
+
+    <div>
+      <label >Password:</label>
+
+      <input type="password" id="password" name="password">
+
+      <button onclick="redirectToPage()">Submit</button>
+
+    </div>
+    <div class="button" style="width:60px;height:30px;"></div>
+
+    <br>
+
+
+    <a href="./Image.html">
+
+      <img src="./Pictures/Hidden Letter.jpg" width="200px" height="200px">
+
+    </a>
+
+
+  
+    <a href="./poem.html">
+
+      <img src="./Pictures/poem.jfif" width="200px" height="200px">
+
+    </a>
+
+    <a href="./Morse.html">
+
+      <img src="./Pictures/morse-code-stock-getty.jpg" width="200px" height="200px">
+
+    </a>
+
+    <a href="./Math.html">
+
+      <img src="./Pictures/R (1).png" width="200px" height="200px">
+
+    </a>
+
+    <a href="./Riddle.html">
+
+      <img src="./Pictures/Riddle.jpg" width="200px" height="200px">
+
+    </a>
+
+
+    <a href="./Converter.html">
+
+      <img src="./Pictures/R.jfif" width="200px" height="200px">
+
+    </a>
+   
+
+
+
+    <style>
+      img {
+
+        position: down;
+
+        top: 100px;
+
+        left: 40px;
+
+        background-color: powderblue;
+
+        border-radius: 20%; /* rounds image corner */
+
+        margin: auto 20px;
+      }
+    </style>
+
+
+
+    <script src="script.js"></script>
+
+    <script type="text/javascript">
+      function redirectToPage() {
+          // Get the value of the input field
+          let userInput = document.getElementById("password");
+          console.log("userinput", userInput)
+
+          // Define the key for comparison
+          var keyA = "#GL78$AW";
+
+          // Check if the user input matches keyA
+          if(userInput.value === keyA) {
+            console.log("Correct Password");
+              // Redirect to the first page if it matches
+            window.location = "Outcome.html";
+          } else {
+              // Redirect to another page if it does not match
+              // window.location.href = "index.html";
+              userInput.value = "";
+              console.log("Incorrect Word");
+          }
+      }
+  </script>
+
+
+
+  </body>
+
+</html>

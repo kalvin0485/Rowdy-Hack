@@ -1,0 +1,28 @@
+html {
+    height: 150;
+    width: 150;
+  }
+  
+  body {
+    background-color: turquoise;
+  }
+  
+  h1 {
+    color: black;
+    text-align: center;
+    font-size: 65px;
+    text-decoration: underline;
+  }
+  
+  th {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 45px;
+  }
+  
+  table {
+    width: 100%;
+    border: 4px solid;
+    margin: 5 auto;
+  }

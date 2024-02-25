@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Look closely :]</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item {
+            margin: 5px;
+        }
+
+        .centered {
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            text-decoration: underline;
+            font-size: 63px;
+        }
+
+        h3 {
+            text-align: center;
+            color: #ffffff;
+            font-size: 33px;
+        }
+        #hintText {
+            color: #ffffff; /* Set hint text color to white */
+        }
+
+    </style>
+</head>
+
+<body style="background-color: #f25415;">
+    <div class="container">
+        <h1>Image</h1>
+        <h3>There is a hidden 1st character in this image, try your best to find it.</h3>
+        <a href="./Pictures/Hidden Letter.jpg" class="centered">
+            <img src="./Pictures/Hidden Letter.jpg" width="800px" height="500px">
+        </a>
+        <a href="./index.html">Back</a>
+
+        <!-- Hint section -->
+        <div id="hint" style="display: none;">
+            <h2>Hint:</h2>
+            <p id="hintText"></p>
+        </div>
+    </div>
+
+    <style>
+        h2{
+            color: white;
+        }
+    </style>
+
+    <!-- Script to show hints -->
+    <script>
+        var hintIndex = 0;
+        var hints = [
+            "Hint 1: Look for clues in the corners and edges of the image.",
+            "Hint 2: Pay attention to any unusual patterns or colors.",
+            "Hint 3: Zoom in on specific areas of the image to uncover hidden details."
+        ];
+
+        function showHint() {
+            var hintDiv = document.getElementById("hint");
+            hintDiv.style.display = "block";
+            document.getElementById("hintText").innerText = hints[hintIndex];
+            hintIndex++;
+            if (hintIndex === hints.length) {
+                // Reset index if all hints are displayed
+                hintIndex = 2;
+            }
+        }
+    </script>
+    <button onclick="showHint()">Show Hint</button>
+</body>
+
+</html>

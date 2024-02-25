@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riddle</title>
+  <link href="a.css" rel="stylesheet" type="text/css" />
+
+  <style>
+    /* Hide hints by default */
+    .hint {
+      display: none;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Riddle</h1>
+
+  <table>
+    <tr>
+      <th>"I'm a single sign, yet worth a lot,</th>
+    </tr>
+    <tr>
+      <th>On a green paper, or in coins I'm sought.</th>
+    </tr>
+    <tr>
+      <th>In wallets and banks, I find my place,</th>
+    </tr>
+    <tr>
+      <th>Symbol of value in the marketplace.</th>
+    </tr>
+  </table>
+
+
+  <!-- Hints -->
+  <div class="hint">Hint 1: Think about currency.</div>
+  <div class="hint">Hint 2: It's commonly found in wallets.</div>
+  <div class="hint">Hint 3: It represents value.</div>
+
+  <!-- Button to show hints one click at a time -->
+  <button onclick="showHint()">Show Hint</button>
+
+  <a href="./index.html">Back</a>
+
+  <script>
+    var hintIndex = 0;
+    var hints = document.querySelectorAll('.hint');
+
+    function showHint() {
+      if (hintIndex < hints.length) {
+        hints[hintIndex].style.display = 'block';
+        hintIndex++;
+      }
+    }
+</script>
+</body>
+</html>

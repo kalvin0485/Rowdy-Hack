@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+
+ 
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width">
+
+  <title>goodluck!</title>
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+ 
+
+<body style="background-color:#ffb7c5;">
+
+ 
+
+  <h1> Poem</h1>
+
+ 
+
+  <style>
+
+    h1 {
+
+      font-size: 63px;
+
+      color: #ffffff;
+
+      font-weight: bold;
+
+      text-align: center;
+
+      text-decoration: underline;
+
+    }
+
+  </style>
+
+ 
+
+  <h2 style="border:rgb(255, 255, 255); border-width:3px; border-style:solid;"> There is a hidden letter inside this poem, try to find it!! </h2>
+
+ 
+
+  <style>
+
+    h2 {
+
+      text-align: center;
+
+      font-size: 33px;
+
+      color: white;
+
+    }
+
+  </style>
+
+ 
+
+  <p class="one">Grapes grow in Gloria's garden.</p>
+
+  <p class="two">She grows some green gourds too.</p>
+
+  <p class="three">For words that start with G.</p>
+
+  <p class="four">The people run to see.</p>
+
+  <p class="five">Words like grapes grow in Gloria's garden.</p>
+
+  <style>
+
+    p {
+
+      text-align: center;
+
+      font-size: 39px;
+
+      color: white;
+
+    }
+
+  </style>
+
+  <button onclick="showHint()">Show Hint</button>
+
+
+  <div id="hint" style="display:none;">
+
+    <!-- Your hints go here -->
+
+    <p id="hintText"></p>
+
+  </div>
+
+ 
+
+  <a href="./index.html">Back</a>
+
+ 
+
+  <style>
+
+    a {
+
+      color: white;
+
+      font-size: 27px;
+
+    }
+
+  </style>
+
+  <script>
+
+    var hintIndex = 0;
+
+    var hints = [
+
+      "Hint 1: Look at the white border around the poem.",
+
+      "Hint 2: Check the text in the first paragraph.",
+
+      "Hint 3: The hidden letter is the first letter of the alphabet."
+
+    ];
+
+ 
+
+    function showHint() {
+
+      var hintDiv = document.getElementById("hint");
+
+      hintDiv.style.display = "block";
+
+ 
+
+      document.getElementById("hintText").innerText = hints[hintIndex];
+
+      hintIndex++;
+
+ 
+
+      if (hintIndex === hints.length) {
+
+        // Reset index if all hints are displayed
+
+        hintIndex = 2;
+
+      }
+
+    }
+
+  </script>
+
+ 
+
+</body>
+
+ 
+
+</html>

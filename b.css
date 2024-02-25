@@ -1,0 +1,38 @@
+html{
+    width: 100;
+    height:100;
+    font-family: 'Schoolbell', cursive;
+}
+body {
+    background: linear-gradient(to bottom, #075a1f,#086522); /* Chalkboard-like color gradient */
+  }
+  
+  /* Add noise pattern for texture */
+  body::before {
+    content: '';
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR42mNkAAIAAAoAAv/lxKUAAAAASUVORK5CYII='); /* Base64 encoded noise pattern */
+    opacity: 0.2; /* Adjust the opacity of the noise pattern */
+  }
+h1{
+    font-size: 70px;
+    font-family: 'Schoolbell', cursive;
+    color: #ffffff;
+    font-weight: bold;
+    text-align:center;
+    text-decoration: underline;
+}
+h2{
+    border: rgb(255, 255, 255); 
+    border-width: 3px; 
+    border-style: none;
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 0cap; 
+}
